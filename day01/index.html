@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个有域名网站</title>
+
+</head>
+<body>
+<button id="bon">点我点我</button>
+</body>
+</html>
+<script type="text/javascript">
+    //  要求：页面输入任意数字，点击按钮后计算阶乘
+    var bon=document.getElementById("bon");
+
+    var sum=1;
+    bon.onclick=function(){
+        var num=parseInt(prompt("输入任意数字"));
+        for (var i = 1; i <=num; i++) {
+            sum*=i;
+
+        }
+        alert(num+"的阶层和为："+sum);
+    }
+</script>
